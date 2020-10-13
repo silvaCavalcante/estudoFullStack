@@ -6,7 +6,13 @@ namespace GameTOP
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var jogo = new JogoFODA("Ronaldo");
+            jogo.IniciarJogo();
         }
     }
+
+    class Jogador{
+        prop
+    }
+
 }
