@@ -1,8 +1,10 @@
+using System;
+
 namespace GameTOP
 {
     public class JogoFODA
     {
-        private readonly string _jogador;
+        private readonly Jogador _jogador;
 
         public JogoFODA(Jogador jogador){
             _jogador = jogador;
@@ -10,7 +12,10 @@ namespace GameTOP
 
 
         public void IniciarJogo(){
-            Console.Write($"{_jogador.nome} deu um passe");
+            _jogador.chuta();
+            _jogador.corre();
+            _jogador.passe();
+     
         }
     }
 }
